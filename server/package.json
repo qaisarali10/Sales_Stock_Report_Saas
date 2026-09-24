@@ -1,0 +1,35 @@
+{
+  "name": "pdf-parser-server",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "dev:watch": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "migrate:sqlite": "node scripts/migrate-sqlite.js",
+    "audit:samples": "node scripts/audit-samples.js",
+    "export:db": "node scripts/export-db.js",
+    "import:db": "node scripts/import-db.js"
+  },
+  "dependencies": {
+    "@lokalise/xlsx": "^0.20.3",
+    "@napi-rs/canvas": "^0.1.80",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongodb-memory-server": "^10.1.4",
+    "mongoose": "^8.10.0",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "pdfjs-dist": "^4.10.38"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}

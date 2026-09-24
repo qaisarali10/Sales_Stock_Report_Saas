@@ -1,0 +1,12 @@
+.git
+.github
+.codex-temp
+**/node_modules
+client/dist
+server/mongo-data
+server/mongo-binaries
+server/uploads
+server/saved-files
+*.log
+.env
+server/.env
